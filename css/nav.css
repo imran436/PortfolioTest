@@ -1,0 +1,108 @@
+html {
+    scroll-behavior: smooth; /* Ensures the webpage keeps a smooth user experience */
+}
+
+body {
+	margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
+}
+
+.portfolio-nav {
+	position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
+	top: 0; /* This ensures no space is displayed above the navbar */
+	z-index: 1; /*This ensures other elements don't display over the navbar */
+	border-style: groove; /*style for the border around the navbar*/
+	border-width: 3px; /*width of the border around the navbar*/
+	color: #212529; /*color of the navbar*/
+	position: relative;
+	display: flex; 
+	align-items: center;
+	padding: .5rem 1rem;
+	background-color: #343a40; /*background color for the navbar*/
+}
+
+/*styling for the click-able anchor elements in the navbar*/
+.portfolio-nav  a {
+	font: bold 18px sans-serif;
+	text-decoration: none;
+	background-color: transparent; /*makes the anchor elements in the navbar have a transparent background*/
+	display: inline-block;
+	padding-top: .3125rem; /*padding between the anchor elements in the navbar*/
+	padding-bottom: .3125rem; /*padding between the anchor elements in the navbar*/
+	font-size: 1.5rem;
+	opacity:.75;
+	color: #fff;
+}
+
+/*Navbar anchor item animation when mouse is clicked and held down*/
+.portfolio-nav a:active {
+	transform: rotate(15deg);
+	animation-duration: 0ms;
+}
+
+/*styling for the <ul> that contains the items in the navbar*/
+.menu-container{
+	
+	margin-left: auto;
+}
+.menu {
+    font: bold 14px sans-serif; /*what is the purpose of this? */
+    text-align: center;
+    list-style: none;
+	margin: 0;
+    display: inline-block;
+    
+}
+
+/*styling for the navbar menu items*/
+.menu li{
+    color: #B3B3B3;
+    display: inline-block;
+    position: relative;
+    padding: 12px 40px;
+    border-radius: 2px;
+    cursor: pointer;
+	border: white 2px solid;
+	border-radius: 50%;
+}
+
+/*hover effect for the navbar menu items*/
+.menu li:hover{
+    color: #fff;
+}
+
+/*hover effect for the list items in the navbar*/
+.Menu li:hover ul{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*styling for the navbar dropdown submenu, which holds the anchor link to the Live Projects page*/
+.sub-menu {
+    padding: 0;
+    left: 0;
+    top: 43.5px;
+    width: 125.5px;
+    opacity: 0;
+	visibility: hidden;
+	border-radius: 2px;
+	position: absolute;
+	margin-left: 10%;
+}
+
+/*styling for the list item in the navbar dropdown submenu*/
+.sub-menu li {
+    background-color: #343a40;
+    color: #B3B3B3;
+    text-align: center;
+}
+
+/*hover effect for the list item in the navbar dropdown submenu*/
+.sub-menu li:hover{
+    color: #fff;
+}
+
+/*styling for the anchor element in the navbar dropdown submenu, which, when clicked, opens a link to the Live Projects page*/
+.sub-menu li a {
+	font: bold 16px sans-serif;
+}
