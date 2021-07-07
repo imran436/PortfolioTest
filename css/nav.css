@@ -1,27 +1,47 @@
 html {
     scroll-behavior: smooth; /* Ensures the webpage keeps a smooth user experience */
 }
-
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    appearance: none;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+:root{
+	--accent-color: #000;
+}
 body {
 	margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
+	background: black;
 }
-
+body:before {
+    animation: grain 8s steps(10) infinite;
+    background-image: url(https://s.cdpn.io/9632/paper-pattern.png);
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.06;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+}
 .portfolio-nav {
 	position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
 	top: 0; /* This ensures no space is displayed above the navbar */
 	z-index: 1; /*This ensures other elements don't display over the navbar */
-	border-style: groove; /*style for the border around the navbar*/
-	border-width: 3px; /*width of the border around the navbar*/
 	color: #212529; /*color of the navbar*/
 	position: relative;
 	display: flex; 
 	align-items: center;
 	padding: .5rem 1rem;
-	background-color: #343a40; /*background color for the navbar*/
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--accent-color)), color-stop(88.96%, rgba(0, 0, 0, 0))); /*background color for the navbar*/
 }
 
 /*styling for the click-able anchor elements in the navbar*/
-.portfolio-nav  a {
+.portfolio-nav .menu a {
 	font: bold 18px sans-serif;
 	text-decoration: none;
 	background-color: transparent; /*makes the anchor elements in the navbar have a transparent background*/
@@ -92,8 +112,8 @@ body {
 
 /*styling for the list item in the navbar dropdown submenu*/
 .sub-menu li {
-    background-color: #343a40;
-    color: #B3B3B3;
+    background-color: #000;
+    color: #fff;
     text-align: center;
 }
 
