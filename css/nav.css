@@ -87,7 +87,14 @@ body:before {
 
 /*hover effect for the navbar menu items*/
 .menu li:hover{
-    color: #fff;
+    background-color: rgba(0,0,0,0.9);
+	border-color:(255,255,255,0.9);
+}
+.menu li:hover a{
+	color: rgba(179, 179, 179, 0.9);
+}
+.menu li:hover .sub-menu li a{
+	color: #fff;
 }
 
 /*hover effect for the list items in the navbar*/
@@ -113,15 +120,19 @@ body:before {
 /*styling for the list item in the navbar dropdown submenu*/
 .sub-menu li {
     background-color: #000;
-    color: #fff;
     text-align: center;
+	color: #fff;
+	color: #fff;
 }
 
 /*hover effect for the list item in the navbar dropdown submenu*/
 .sub-menu li:hover{
-    color: #fff;
+    background-color: rgba(0,0,0,.9);
+	border-color:(255,255,255,0.9);
 }
-
+.menu li:hover .sub-menu li:hover a{
+	color: rgba(179, 179, 179, 0.9);
+}
 /*styling for the anchor element in the navbar dropdown submenu, which, when clicked, opens a link to the Live Projects page*/
 .sub-menu li a {
 	font: bold 16px sans-serif;
