@@ -32,8 +32,6 @@ body:before {
 	position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
 	top: 0; /* This ensures no space is displayed above the navbar */
 	z-index: 1; /*This ensures other elements don't display over the navbar */
-	color: #212529; /*color of the navbar*/
-	position: relative;
 	display: flex; 
 	align-items: center;
 	padding: .5rem 1rem;
