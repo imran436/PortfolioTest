@@ -7,8 +7,9 @@ const lscroll = new LocomotiveScroll({
 });
 
 window.addEventListener('load', () =>{
-		lscroll.update();
-    
+	setTimeout(() => {
+        lscroll.update();   
+    }, 100);
 });
 
 window.addEventListener("resize", ()=> {
