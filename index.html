@@ -6,7 +6,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ryhan Chowdhury port</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
-
+<script>
+window.addEventListener('load',()=>{
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
 </head>
 <body>
 <nav id="nav-placeholder" class="portfolio-nav">
@@ -63,11 +67,7 @@
 <div>	
 <footer>
 </footer>
-<script>
-window.addEventListener('load',()=>{
-  $("#nav-placeholder").load("nav.html");
-});
-</script>
+
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js">
 </script>
 <script type ="module" src="./js/scroll.js">
