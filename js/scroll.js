@@ -1,4 +1,4 @@
-import LocomotiveScroll from './locomotive-scroll';
+import LocomotiveScroll from './locomotive-scroll.min.js';
 
 export const lscroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
