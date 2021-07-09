@@ -259,6 +259,9 @@ body:before {
   top: -100%;
   width: 300%;
 }
+@media (max-width : 320px) {
+    body:before{display:none;}
+}
 
 @keyframes grain {
   0%, 100% {
