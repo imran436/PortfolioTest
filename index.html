@@ -18,9 +18,9 @@ window.addEventListener('load',()=>{
   $("#nav-placeholder").load("nav.html");
   $("footer").load("Footer.html");
 });
-function LoadNew(){
+function LoadNew(htmlFile){
 $("#main").empty();
-$("#main").load("aboutPartial.html");
+$("#main").load(htmlFile);
 }
 </script>
 </head>
