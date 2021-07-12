@@ -477,6 +477,58 @@ html.has-scroll-dragging {
   right: auto;
   bottom: 0;
 }
+footer {
+  overflow: hidden;
+  margin: 14vh 10px 40px;
+  padding-bottom: 2rem;
+}
+footer.is-inview {
+  transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93) 0.4s;
+  opacity: 1;
+}
+footer.is-inview .anim {
+  transform: translateY(0);
+}
+footer .footer__one {
+  text-align: center;
+}
+footer .footer__one .contact__mail {
+  margin-top: 1.3rem;
+  font-family: "MonumentExtended-Regular";
+  font-size: 5vw;
+}
+footer .footer__two {
+  /* min-height: 60px; */
+  height: auto;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(100%);
+  transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93);
+}
+@media (min-width: 901px) {
+  footer .footer__two {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+footer .footer__two ul {
+  margin-top: 1rem;
+}
+@media (min-width: 901px) {
+  footer .footer__two ul {
+    margin-top: 0;
+  }
+}
+footer .footer__two ul li {
+  text-transform: uppercase;
+  display: inline-block;
+  list-style: none;
+}
+footer .footer__two ul li:not(:last-child) {
+  margin-right: 15px;
+}
 
 
 .index section:not(.index__hero), footer {
